@@ -34,7 +34,7 @@ async function signin(req, res) {
         });
         SuccessResponse.data = user;
         return res
-            .status(StatusCodes.CREATED)
+            .status(StatusCodes.OK)
             .json(SuccessResponse);
     } catch (error) {
         ErrorResponse.error = error;
